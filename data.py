@@ -1,8 +1,8 @@
 
 #INTRO MESSAGES
-introList = ["The goal of the game is to score as many points as you can by answering questions about money",
+intro_list = ["The goal of the game is to score as many points as you can by answering questions about money",
 
-"Here are your tools - a button to repeat the question,  a button to submit your answer, and a total of 3 hints",
+"Here are your tools : a button to repeat the question,  a button to submit your answer, and a total of 3 hints",
 
 "You will receive instant feedback to whether you got the answer right or wrong",
 
@@ -18,3 +18,19 @@ introList = ["The goal of the game is to score as many points as you can by answ
 
 "Lets Go!",
 ]
+
+
+#QUESTIONS DICTIONARY
+money_questions = {
+    'Who is the richest person in America?' : 'Jeff Bezos',
+    
+    'What is Warren Buffet\'\s net worth?' : '81 billion dollars',
+
+    'How much was Bloomberg\'\s salary while working as mayor of NYC in 2009?' :  '1 dollar',
+
+    'What is the average NFL player salary per season?' : '2.7 million ',
+
+    'How much does an average software engineer in Silicon Valley earn in a year?' : '101,876 dollars'
+    }
+
+    #RESPONSES

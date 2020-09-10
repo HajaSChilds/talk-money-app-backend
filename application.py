@@ -19,6 +19,7 @@ def getQuestionDict():
 def getClosing():
     pass
 
+
 print(getIntroMsg())
 
 
