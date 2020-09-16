@@ -1,26 +1,29 @@
 from flask import Flask
-from data import introList
+import json
+from data import intro_list, money_items
+from flask_cors import CORS, cross_origin
+
 
 application = app = Flask(__name__) 
-
+cors = CORS(app)
 
 
 @app.route("/intro")    
 def getIntroMsg():
-    return introList
+    return json.dumps(intro_list)
 
 
 @app.route("/questions")    
 def getQuestionDict():
-    pass
+    return json.dumps(money_items)
 
+@app.route("/answers") 
+def getAnswers():
+    pass
 
 @app.route("/closing")
 def getClosing():
     pass
-
-
-print(getIntroMsg())
 
 
 if __name__ == "__main__" :

@@ -1,16 +1,16 @@
 
 #INTRO MESSAGES
-intro_list = ["The goal of the game is to score as many points as you can by answering questions about money",
+intro_list = ["The goal of this mini-game is to test your knowledge about money trivia. You will receive 2 points for every correct answer",
 
 "Here are your tools : a button to repeat the question,  a button to submit your answer, and a total of 3 hints",
+
+"The questions are timed so have your favorite search engines ready. You must send an answer before time runs out or you will not score a point",
 
 "You will receive instant feedback to whether you got the answer right or wrong",
 
 "There is no penalty for guessing or getting a wrong answer, so put whatever you think.  You don't have to be 100\%\ correct, close is good enough!",
 
-"The questions are timed so you are discouraged to look it up.",
-
-"Please type your answers using numbers when writing numeric values. Thanks!",
+"Please type your answers using numbers when writing numeric values.",
 
 "Have fun!",
 
@@ -21,7 +21,7 @@ intro_list = ["The goal of the game is to score as many points as you can by ans
 
 
 #QUESTIONS DICTIONARY
-money_questions = {
+money_items = {
     'Who is the richest person in America?' : 'Jeff Bezos',
     
     'What is Warren Buffet\'\s net worth?' : '81 billion dollars',
@@ -33,4 +33,4 @@ money_questions = {
     'How much does an average software engineer in Silicon Valley earn in a year?' : '101,876 dollars'
     }
 
-    #RESPONSES
+  
