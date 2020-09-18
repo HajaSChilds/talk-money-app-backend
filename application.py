@@ -1,6 +1,6 @@
 from flask import Flask
 import json
-from data import intro_list, money_items
+from data import intro_list, money_items, win_message, lose_message
 from flask_cors import CORS, cross_origin
 
 
@@ -17,13 +17,21 @@ def getIntroMsg():
 def getQuestionDict():
     return json.dumps(money_items)
 
+
 @app.route("/answers") 
 def getAnswers():
     pass
 
-@app.route("/closing")
-def getClosing():
-    pass
+
+
+@app.route("/closing/<score>")
+def getClosing(score):
+    if score >= 3:
+        return win_message
+    else:
+        return lose_message
+
+
 
 
 if __name__ == "__main__" :

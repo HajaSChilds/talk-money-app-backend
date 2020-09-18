@@ -22,9 +22,9 @@ intro_list = ["The goal of this mini-game is to test your knowledge about money 
 
 #QUESTIONS DICTIONARY
 money_items = {
-    'Who is the richest person in America?' : 'Jeff Bezos',
+    'What is the net worth of the richest man in the world?' : ' 113 billion',
     
-    'What is Warren Buffet\'\s net worth?' : '81 billion dollars',
+    'What is Warren Buffet\'\s net worth?' : '67 billion ',
 
     'How much was Bloomberg\'\s salary while working as mayor of NYC in 2009?' :  '1 dollar',
 
@@ -33,4 +33,8 @@ money_items = {
     'How much does an average software engineer in Silicon Valley earn in a year?' : '101,876 dollars'
     }
 
+#USER SUCCESS
+win_message = {"CONGRATULATIONS! YOU WIN!!! \n\ You are a money mogul and you have won this mini-game! \n\ Your prize is... a lifetime of financial success!!!  Check out this article for more info https://www.forbes.com/billionaires/"}
+
+lose_message = {"SORRY, YOU DID NOT WIN THE CHALLENGE.\n\ However you are a winner in real life and that is all that matters!\n\ May you enjoy a lifetime of financial success!! Check out this article for more info https://www.forbes.com/billionaires/"}
   
