@@ -18,9 +18,15 @@ def getQuestionDict():
     return json.dumps(money_items)
 
 
-@app.route("/answers") 
-def getAnswers():
-    pass
+
+@app.route("/answers/<input>", methods=['GET', 'POST']) 
+def getAnswers(input):
+    uppercase = False
+    if (input.contains('$')):
+        uppercase = True
+        answer_pattern = {capsDir : uppercase,}
+    return json.dumps(answer_pattern)
+    
 
 
 
@@ -30,7 +36,6 @@ def getClosing(score):
         return win_message
     else:
         return lose_message
-
 
 
 
