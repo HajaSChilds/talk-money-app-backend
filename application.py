@@ -20,12 +20,17 @@ def getQuestionDict():
 
 
 @app.route("/answers/<input>", methods=['GET', 'POST']) 
-def getAnswers(input):
+def getAnswers(input, x):
     uppercase = False
-    if (input.contains('$')):
+    compare = money_items[x]
+    if (input.__contains__('$')):
         uppercase = True
-        answer_pattern = {capsDir : uppercase,}
-    return json.dumps(answer_pattern)
+    if (input.__contains__(compare['correct_num']) and input.contains(compare['correct_scale'])): 
+        point = 1
+    else:
+        point = 0      
+    answer_pattern = {"status": ["OK", 200], "uppercase": uppercase, "points": point, "question": x }
+    return answer_pattern
     
 
 
