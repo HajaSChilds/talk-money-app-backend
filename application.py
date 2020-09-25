@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 import json
 from data import intro_list, money_items, win_message, lose_message
 from flask_cors import CORS, cross_origin
@@ -10,12 +10,12 @@ cors = CORS(app)
 
 @app.route("/intro")    
 def getIntroMsg():
-    return json.dumps(intro_list)
+    return jsonify(intro_list)
 
 
 @app.route("/questions")    
 def getQuestionDict():
-    return json.dumps(money_items)
+    return jsonify(money_items)
 
 
 
@@ -25,7 +25,7 @@ def getAnswers(input, x):
     compare = money_items[x]
     if (input.__contains__('$')):
         uppercase = True
-    if (input.__contains__(compare['correct_num']) and input.contains(compare['correct_scale'])): 
+    if (input.__contains__(compare['correct_num']) and input.__contains__(compare['correct_scale'])): 
         point = 1
     else:
         point = 0      
